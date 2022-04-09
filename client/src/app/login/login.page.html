@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-input
+      [(ngModel)]="licenseKey"
+      data-test="key-input"
+      type="text"
+      placeholder="enter license key..."
+    ></ion-input>
+  </ion-item>
+
+  <ion-button
+    expand="full"
+    color="light"
+    data-test="login-button"
+    (click)="login()"
+  >
+    <ion-icon slot="start" name="log-in"></ion-icon> Log In
+  </ion-button>
+</ion-content>

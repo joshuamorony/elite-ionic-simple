@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>LessonSelect</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="module$ | async as module">
+    <ion-item
+      data-test="lesson-list-item"
+      button
+      (click)="openLesson(lesson)"
+      *ngFor="let lesson of module.lessons"
+    >
+      {{ lesson.title }}
+    </ion-item>
+  </ion-list>
+</ion-content>

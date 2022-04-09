@@ -1,0 +1,7 @@
+{
+  "name": "elite-ionic-simple",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

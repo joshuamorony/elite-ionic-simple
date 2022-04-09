@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lesson</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div data-test="lesson-content" *ngIf="lesson$ | async as lesson">
+    {{ lesson.content }}
+  </div>
+</ion-content>
